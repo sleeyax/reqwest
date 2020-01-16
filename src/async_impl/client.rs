@@ -100,7 +100,7 @@ impl ClientBuilder {
     /// This is the same as `Client::builder()`.
     pub fn new() -> ClientBuilder {
         let mut headers: HeaderMap<HeaderValue> = HeaderMap::with_capacity(2);
-        headers.insert(ACCEPT, HeaderValue::from_static("*/*"));
+        // headers.insert(ACCEPT, HeaderValue::from_static("*/*"));
 
         ClientBuilder {
             config: Config {
